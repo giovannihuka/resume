@@ -5,9 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple|3d-float">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.w3-lobster {
+  font-family: "Lobster", serif;
+}
+.w3-rancho{
+  font-family: "Rancho", serif;
+}
 </style>
 <body class="w3-light-grey">
 
@@ -29,8 +37,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <!-- </div> -->
           <!-- </div> -->
         </div>
-        <div class="w3-panel w3-dark-grey" style="margin-top: 0px;">  
-            <h2>Giovanni H. Huka SKom.</h2>
+        <div class="w3-panel w3-lobster" style="margin-top: 0px;">  
+            <p class="w3-xxxlarge" style="color: black;">Giovanni H. Huka</p>
           </div>
         <div class="w3-container">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-dark-grey"></i>IT Specialist</p>
@@ -117,6 +125,24 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h5 class="w3-opacity"><b>Technical Senior Consultant | PT. NTT Data Indonesia</b></h5>
           <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2012 - <span class="w3-tag w3-dark-grey w3-round">Current</span></h6>
           <p>Multiple project assignment with different subject from GIS data mapping developer, internal HRA Business Analyst, online retail POS named LAKUPOS system project manager and HR Zero online HRA Payroll & Tax online system Technical Senior Consultant</p>
+          <button onclick="myFunction('Demo1')" class="w3-button">Read more ...</button>
+          <div id="Demo1" class="w3-container w3-hide">
+            <h6>Senior Technical Consultant</h6>
+            <ul>
+              <li>Managing Project Retail of FMCG and F&B system development and implementation</li>
+              <li>Managing Project Retail of FMCG and F&B system development and implementation</li>
+              <li>Managing Project Retail of FMCG and F&B system development and implementation</li>
+            </ul>
+            <h6>Solution Specialist</h6>
+            <ul>
+              <li>Managing Project Retail of FMCG and F&B system development and implementation</li>
+              <li>Managing Retail Solution project in F&B and FMCG business sector</li>
+              <ul>
+                <li>Lead senior Java developer for web backend application and Android developer for front end POS application team</li>
+                <li>Lead application and POS HW support team</li>
+              </ul>
+            </ul>
+          </div>
           <hr>
         </div>
         <div class="w3-container">
@@ -211,6 +237,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
   <p>Created by Giovanni H. Huka</p>
 </footer>
+
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html>
